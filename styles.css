@@ -8,6 +8,11 @@
     font-style: normal;
 }
 
+/* Fallback en caso de que no cargue */
+* {
+    font-family: 'NITEMARE', 'Nightmare Pumpkin', 'Creepster', cursive;
+}
+
 * {
     margin: 0;
     padding: 0;
