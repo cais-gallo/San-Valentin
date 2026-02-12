@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'NITEMARE';
-    src: url('./NITEMARE.ttf') format('truetype');
+    src: url('NITEMARE.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
