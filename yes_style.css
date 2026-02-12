@@ -11,6 +11,10 @@
     font-style: normal;
 }
 
+/* Fallback en caso de que no cargue */
+* {
+    font-family: 'NITEMARE', 'Nightmare Pumpkin', 'Creepster', cursive;
+}
 body {
     display: flex;
     justify-content: center;
