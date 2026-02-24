@@ -11,10 +11,11 @@
     font-style: normal;
 }
 
-/* Fallback en caso de que no cargue */
+
 * {
     font-family: 'NITEMARE', 'Nightmare Pumpkin', 'Creepster', cursive;
 }
+
 body {
     display: flex;
     justify-content: center;
@@ -66,7 +67,6 @@ body::before {
                  5px 5px 0 #2a0a2a,
                  0 0 30px #b19cd9;
     margin-bottom: 15px;
-    font-family: 'NITEMARE', cursive;
     letter-spacing: 4px;
 }
 
@@ -97,7 +97,6 @@ body::before {
     box-shadow: 0 0 50px rgba(147, 112, 219, 0.9);
 }
 
-/* Sección de QR */
 .qr-section {
     margin-top: 50px;
     padding-top: 30px;
@@ -108,7 +107,6 @@ body::before {
     color: #f0e6d2;
     font-size: 2.2em;
     margin-bottom: 15px;
-    font-family: 'NITEMARE', cursive;
     text-shadow: 2px 2px 0 #4a1e4a;
 }
 
@@ -154,7 +152,6 @@ body::before {
     margin-bottom: 20px;
     font-size: 1.5em;
     text-shadow: 1px 1px 0 #2a0a2a;
-    font-family: 'NITEMARE', cursive;
     letter-spacing: 2px;
 }
 
@@ -166,6 +163,10 @@ body::before {
 }
 
 .qr-placeholder img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
     border-radius: 15px;
     border: 3px solid #9370db;
     background: white;
@@ -174,7 +175,7 @@ body::before {
 }
 
 .qr-placeholder img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .qr-label {
@@ -189,7 +190,6 @@ body::before {
     margin: 40px 0 20px;
     text-shadow: 2px 2px 0 #4a1e4a,
                  0 0 20px #ff1493;
-    font-family: 'NITEMARE', cursive;
     letter-spacing: 3px;
 }
 
@@ -208,26 +208,30 @@ body::before {
     text-shadow: 1px 1px 0 #2a0a2a;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 700px) {
     .container {
         padding: 1.5rem;
     }
-    
+
     .header_text {
         font-size: 2.2em;
     }
-    
+
     .qr-container {
         gap: 20px;
     }
-    
+
     .qr-item {
         padding: 15px;
         width: 100%;
         max-width: 300px;
     }
-    
+
+    .qr-placeholder img {
+        width: 180px;
+    }
+
     .heart-message {
         font-size: 1.4em;
     }
@@ -237,7 +241,7 @@ body::before {
     .header_text {
         font-size: 1.8em;
     }
-    
+
     .qr-title {
         font-size: 1.6em;
     }
